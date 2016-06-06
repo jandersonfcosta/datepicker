@@ -1,0 +1,80 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.calendar {
+	width: 190px;
+	padding: 6px;
+	padding-top: 6px;
+}
+
+.calendar table {
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.calendar td {
+	font-family: arial, sans-serif;
+	font-size: 9pt;
+	padding: 3px;
+	text-align: center;
+}
+
+.calendar .navbar {
+	text-align: center;
+}
+
+.calendar .navbar #monthYear span {
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.calendar .navbar a {
+	color: #999;
+	font-size: 10pt;
+	position: relative;
+	top: 0;
+}
+
+.calendar .navbar #btnPrevMonth, #btnNextMonth {
+	cursor: pointer;
+}
+
+.calendar .navbar #btnPrevMonth:hover a, #btnNextMonth:hover a {
+	color: #000;
+	font-weight: normal;
+}
+
+.calendar .navbar #btnPrevMonth {
+	text-align: left;
+	padding-left: 7px;
+	padding-right: 10px;
+}
+.calendar .navbar #btnNextMonth {
+	text-align: right;
+	padding-left: 10px;
+	padding-right: 7px;
+}
+
+.calendar .week td {
+	color: #000;
+	font-size: 8pt;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+.calendar .day {
+	cursor: pointer;
+}
+
+.calendar .day:hover {
+	background-color: #eee !important;
+}
+
+.calendar .day.selected {
+	color: #fff;
+	background-color: #366BBA;
+	font-weight: bold;
+}

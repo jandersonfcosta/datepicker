@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<style>
+		body {
+			background-color: #eee;
+		}
+	</style>
+</head>
+
+<body>
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit expedita vel, temporibus iste atque cum ratione similique facere minima corrupti, ea, ipsum cumque, ad libero iusto distinctio nulla est culpa!
+</p>
+
+<input type="text" id="input1" value="31/12/2016">
+<input type="text" id="input2" value="15/2/2016">
+
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit expedita vel, temporibus iste atque cum ratione similique facere minima corrupti, ea, ipsum cumque, ad libero iusto distinctio nulla est culpa!
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit expedita vel, temporibus iste atque cum ratione similique facere minima corrupti, ea, ipsum cumque, ad libero iusto distinctio nulla est culpa!
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit expedita vel, temporibus iste atque cum ratione similique facere minima corrupti, ea, ipsum cumque, ad libero iusto distinctio nulla est culpa!
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit expedita vel, temporibus iste atque cum ratione similique facere minima corrupti, ea, ipsum cumque, ad libero iusto distinctio nulla est culpa!
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit expedita vel, temporibus iste atque cum ratione similique facere minima corrupti, ea, ipsum cumque, ad libero iusto distinctio nulla est culpa!
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit expedita vel, temporibus iste atque cum ratione similique facere minima corrupti, ea, ipsum cumque, ad libero iusto distinctio nulla est culpa!
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit expedita vel, temporibus iste atque cum ratione similique facere minima corrupti, ea, ipsum cumque, ad libero iusto distinctio nulla est culpa!
+</p>
+
+</body>
+
+<script src="datepicker.min.js"></script>
+
+<script type="text/javascript">
+	document.getElementById("input1").onfocus = function() {
+		datepicker({
+			field: this,
+			open: function() {
+				console.log("open");
+			},
+			select: function(date) {
+				console.log(date);
+			},
+			close: function() {
+				console.log("close");
+			}
+		});
+	};
+
+	document.getElementById("input2").onfocus = function() {
+		datepicker({
+			field: this,
+			select: function(date) {
+				console.log(date);
+			}
+		});
+	};
+
+</script>
+
+</html>
