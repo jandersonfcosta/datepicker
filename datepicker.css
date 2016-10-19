@@ -1,0 +1,85 @@
+.datepicker {
+	font-family: sans-serif;
+	font-size: 16px;
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-bottom: 1px solid #d5d5d5;
+	border-radius: 3px;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+	padding: 8px;
+	padding-top: 16px;
+	margin-top: 2px;
+	cursor: default;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.datepicker .gray {
+	color: #999;
+}
+
+.datepicker td {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.datepicker #datepicker-navbar-left {
+	color: #999;
+	padding-left: 2px;
+	width: 26px;
+	cursor: pointer;
+}
+
+.datepicker #datepicker-navbar-left:hover {
+	color: #000;
+}
+
+.datepicker .datepicker-navbar-center {
+	padding-top: 4px;
+}
+
+.datepicker #datepicker-navbar-right {
+	color: #999;
+	padding-right: 2px;
+	width: 26px;
+	cursor: pointer;
+}
+
+.datepicker #datepicker-navbar-right:hover {
+	color: #000;
+}
+
+
+.datepicker .datepicker-week td {
+	color: gray;
+	text-transform: uppercase;
+	font-size: .75em;
+	padding-top: 20px;
+	padding-bottom: 8px;
+	width: 30px;
+}
+
+.datepicker .datepicker-day {
+	display: inline-block;
+	cursor: pointer;
+	width: 32px;
+	line-height: 28px;
+	padding-top: 2px;
+	border-radius: 2px;
+}
+
+.datepicker .datepicker-day:hover {
+	background-color: #eee;
+}
+
+.datepicker .datepicker-day-selected {
+	color: #fff;
+	background-color: #FF9800;
+	font-weight: bold;
+}
+
+.datepicker .datepicker-day-selected:hover {
+	background-color: #FF9800;
+}
